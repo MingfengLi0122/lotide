@@ -27,3 +27,6 @@ console.log(tail(words1).length);
 
 const words2 = [];
 console.log(tail(words2).length);
+
+let words3 = [1, 2, 3];
+assertEqual(tail(words3).length, words3.length - 1);
