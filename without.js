@@ -41,6 +41,7 @@ without(words, ["lighthouse"]); // no need to capture return value for this test
 // Make sure the original array was not altered by the without function
 
 without([1, 2, 3], [1]); // => [2, 3]
-without(["1", "2", "3"], [1, "2", 3]); // => ["1", "2"]
+without(["1", "2", "3"], [1, 2, "3"]); // => ["1", "2"]
+without(["1", "2", "3", "5"], [1, "2", "3", 5]);
 
 assertArraysEqual(words, ["hello", "world", "lighthouse"]);
