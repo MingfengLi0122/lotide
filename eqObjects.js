@@ -20,11 +20,10 @@ const eqObjects = function(object1, object2) {
         //console.log("object1[key]:", object1[key]);
         //console.log("object2[key]:", object2[key]);
           return false;
-        } else {
-          return true;
-        }
+        } 
       }
     } 
+    return true;
   }
 };
 //Array.isArray IsObject
