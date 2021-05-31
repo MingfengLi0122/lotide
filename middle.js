@@ -1,4 +1,4 @@
-s
+
 
 const middle = function(arr) {
   let mid = [];
