@@ -32,12 +32,10 @@ const flatten = function(array) {
       res.push(ele);
     }
   }
-  //console.log(res);
   return res;
 };
 
 console.log(flatten([1, 2, [3, 4], 5, [6]]));
 const arr1 = flatten([1, 2, [3, 4], 5, [6]]);
-//console.log(arr1.length);
 const arr2 = [1, 2, 3, 4, 5, 6];
 assertArraysEqual(arr1, arr2);

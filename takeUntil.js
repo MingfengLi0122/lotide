@@ -22,7 +22,6 @@ const assertArraysEqual = function(arr1, arr2) {
 };
 
 const takeUntil = function(array, callback) {
-  // ...
   let res = [];
   for (let item of array) {
     if (!callback(item)) {
@@ -51,9 +50,7 @@ assertArraysEqual(results1, expect1);
 const expect2 = [ 'I\'ve', 'been', 'to', 'Hollywood' ];
 assertArraysEqual(results2, expect2);
 
-// [ 1, 2, 5, 7, 2 ]
-// ---
-// [ 'I\'ve', 'been', 'to', 'Hollywood' ]
+
 
 
 

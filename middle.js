@@ -1,5 +1,3 @@
-
-
 const middle = function(arr) {
   let mid = [];
   if (arr.length === 0 || arr.length === 1 || arr.length === 2) {

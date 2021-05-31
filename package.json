@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@lmf950122/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "learning purpose library",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/MingfengLi0122/lotide.git"
   },
-  "author": "",
+  "author": "lmf950122",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/MingfengLi0122/lotide/issues"
@@ -22,5 +22,8 @@
   "devDependencies": {
     "chai": "^4.3.4",
     "mocha": "^8.4.0"
+  },
+  "dependencies": {
+    "my-package": "^0.0.0"
   }
 }
