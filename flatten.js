@@ -1,6 +1,5 @@
 const eqArrays = function(arr1, arr2) {
-  //console.log("arr1: ", arr1);
-  //console.log("arr2: ", arr2);
+
   if (arr1.length === arr2.length) {
     for (let i = 0; i < arr1.length; i++) {
       if (arr1[i] !== arr2[i]) {
@@ -23,11 +22,15 @@ const assertArraysEqual = function(arr1, arr2) {
   }
 };
 
-let res = [];
+
+
 const flatten = function(array) {
+  let res = [];
+  console.log('array:', array);
   for (const ele of array) {
+    console.log('ele:', ele);
     if (Array.isArray(ele)) {
-      flatten(ele);
+      res.push(...flatten(ele));
     } else {
       res.push(ele);
     }
@@ -35,7 +38,9 @@ const flatten = function(array) {
   return res;
 };
 
-console.log(flatten([1, 2, [3, 4], 5, [6]]));
+ //console.log(flatten([1, 2, [3, 4], 5, [6]]));
 const arr1 = flatten([1, 2, [3, 4], 5, [6]]);
 const arr2 = [1, 2, 3, 4, 5, 6];
-assertArraysEqual(arr1, arr2);
+ assertArraysEqual(arr1, arr2);
+
+module.exports = flatten;
